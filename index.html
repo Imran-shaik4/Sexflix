@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexflix</title>
+
+
+    <style>
+        .slider-container {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+
+
+
+    <script>
+        // Initialize slide indices for each slider
+        const slideIndices = {
+            slider1: 0,
+            slider2: 0,
+            slider3: 0,
+            slider4: 0,
+            slider5: 0,
+            slider6: 0,
+            slider7: 0
+        };
+
+        function showSlide(sliderId) {
+            const slides = document.querySelectorAll(`#${sliderId} .slide`);
+            const currentIndex = slideIndices[sliderId];
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Show the selected slide
+            slides[currentIndex].style.display = "block";
+        }
+        function prevSlide(sliderId) {
+            slideIndices[sliderId]--;
+            if (slideIndices[sliderId] < 0) {
+                slideIndices[sliderId] = 2; // Wrap around to the last slide
+            }
+            showSlide(sliderId);
+        }
+
+        function nextSlide(sliderId) {
+            slideIndices[sliderId]++;
+            if (slideIndices[sliderId] > 2) {
+                slideIndices[sliderId] = 0; // Wrap around to the first slide
+            }
+            showSlide(sliderId);
+        }
+
+        // Initial display of the first slide for each slider
+        showSlide('slider1');
+        showSlide('slider2');
+        showSlide('slider3');
+        showSlide('slider4');
+        showSlide('slider5');
+        showSlide('slider6');
+        showSlide('slider7');
+
+    </script>
+    <link rel="stylesheet" href=".\index-1148fa5b.css">
+</head>
+
+<body class="text-white">
+
+
+
+
+
+    <section class="w-[100%] h-[100vh] bg-cover bg-center" style="background-image: url('banner-9d67799a.jpg');">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.7)]">
+            <header class="max-w-[1170px] mx-auto ">
+                <div class="grid sm:grid-cols-2 grid-cols-[60%_auto] sm:px-4 py-2 px-2 items-center justify-center">
+                    <div class="text-5xl text-red-600 font-bold font-sans sm:pl-20">SEXFLIX</div>
+                    <div class="sm:pl-96"><button id="sign_in"
+                            class="bg-red-600 py-2 px-4 font-semibold rounded-[5px] hover:bg-red-950 duration-300">Sign
+                            in</button></div>
+                </div>
+            </header>
+            <main>
+                <div class="max-w-[1170px] mx-auto text-center sm:pt-40 pt-20">
+                    <h1 class="text-5xl font-bold font-sans">book your favorite one & enjoy</h1>
+                    <h3 class="text-2xl mt-5 font-sans">Elevate Your Life with Our Exclusive Guys</h3>
+                    <h5 class="text-xl mt-6 font-sans">There are here to satisfing you,if you want any one just book
+                        him.</h5>
+                    <div class="mt-6 items-center">
+                        <input id="number"
+                            class="bg-transparent border border-gray-400 px-2 py-3 w-1/3 text-xl rounded-md" type="text"
+                            name="" id="" placeholder="Phone number">
+                        <button id="numbersubmit"
+                            class="px-2 py-4 rounded-md bg-red-600 w-1/3 hover:bg-red-950 duration-300">Get Started
+                            ></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+        <script>
+            const signInButton1 = document.getElementById("sign_in");
+            signInButton1.addEventListener("click", function () {
+                // When the button is clicked, show an alert with "Hello"
+                alert("po raa puka!");
+            });
+
+            const signInButton2 = document.getElementById("numbersubmit");
+
+            // Add a click event listener to the button
+            signInButton2.addEventListener("click", function () {
+
+                const input = document.getElementById('number');
+                if (number.value == '') {
+                    alert('Ni number type chei ra puka!');
+                } else {
+
+                    window.open("https://olam18plus.com", "_self");
+                }
+
+            });
+
+        </script>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!--           *** 1.varun statr ***                                         -->
+
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\varun-7d45f330.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : varun tej</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 150$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 15min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 4.75inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"My wife is a sex object - every time I ask for sex, she
+                            objects."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : varun</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisfy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider1">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Dani Daniels_webp-f9bc9920.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sheena Ryder_webp-ab6f67de.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sofia Lee _webp-67ba75bb.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button
+                            class="button bg-red-600 hover:bg-red-950 duration-300 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider1')">Previous</button>
+                        <button
+                            class="button bg-red-600 hover:bg-red-950 duration-300 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider1')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+
+    <!--           *** 2.siddu statr ***                                         -->
+
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\siddu-df5ed422.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : Siddhardha</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 197$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 19min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 5.87inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"There is nothing safe about sex. There never will be."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : siddu</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisfy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider2">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Ivy Wolfe_webp-3d2180d9.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_TIGERR BENSON_webp-9cdfe342.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Valentina Nappi_webp-00b8a0dc.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider2')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider2')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+    <!--           *** 3.basha statr ***                                         -->
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\basha-f88af748.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : Basha</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 33$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 4min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 2.65inch</h1>
+                    </div>
+                    <div>
+                        <button class=" book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"The good thing about masturbation is that you don't have to
+                            get dressed up for it."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : basha</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider3">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Lucia Love_webp-e8b4b547.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_o4RrxGb_webp-acd2180d.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Cherie DeVille_webp-3a7bfc38.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider3')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider3')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+
+    <!--           *** 4.karimulla statr ***                                         -->
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\karimulla-25761772.jpeg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : karimulla</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 187$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 18min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 5.65inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"Sex education may be a good idea in the school, but i don't
+                            believe the kids should be given homework."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : karimulla</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider4">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sofia Lee _webp-67ba75bb.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Coco De Mal_webp-7e37bbc3.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\1230-ss2_webp-3d22193d.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider4')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider4')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+    <!--           *** 5.teja statr ***                                         -->
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\teja-b738d82d.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : teja blacky</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 340$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 27min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 7.65inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"We have reason to believ that man first walked upright to
+                            free his hands for masturbation."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : teja</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider5">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sheena Ryder_webp-ab6f67de.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Lucia Love_webp-e8b4b547.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_MIA KHALIFA_webp-0ac71cda.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider5')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider5')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+    <!--           *** 6.rabbani statr ***                                         -->
+
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\rabbani-e135c804.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : Rabbani</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 34$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 6min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 4.65inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"I believe that sex is a beautiful thing between two people.
+                            Between five, it's fantastic."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : rabbani</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider6">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Kay J_webp-21bacd09.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Taylor Vixen_webp-f0695670.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sunny Leone_webp-30c54d20.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider6')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider6')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+
+    <!--           *** 7. hidaytulla statr ***                                         -->
+
+
+
+    <section class="w-[100%] bg-black border-t-[7px] border-t-[#605d5d] sm:py-36 py-14">
+        <div class="max-w-[1170px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 flex flex-col">
+                    <div class="items-center p-1 rounded-md">
+                        <img class="h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800"
+                            src=".\hidaytulla-c3d6f573.jpg" alt="image description">
+                    </div>
+                    <div class="items-center p-3 rounded-md border border-[#605d5d] mb-2 w-[80%]">
+                        <h1 class="font-sans font-semibold pl-7">Nmae : Hidaytulla</h1>
+                        <h1 class="font-sans font-semibold pl-7">Price : 56$</h1>
+                        <h1 class="font-sans text-xs pl-7">Duration : 10min</h1>
+                        <h1 class="font-sans text-xs pl-7">Size : 3.65inch</h1>
+                    </div>
+                    <div>
+                        <button class="book p-2 bg-red-600 hover:bg-red-950 rounded-md ">Book now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="items-center justify-center mb-4 sm:mb-0 sm:mr-4 ">
+                    <div class="p-16 border border-[#605d5d] rounded-md text-center mt-16">
+                        <h1 class="text-4xl font-sans mb-4">"I don't know the question, but sex is definitely th
+                            answer."</h1>
+                        <h3 class="pl-44 text-xs font-sans mt"><span class="pr-1">BY</span> : hiday</h3>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-xl font-sans font-semibold text-center">"I was able to satisy them."</h1>
+
+                    <div class="slider-container mx-auto my-4">
+                        <div class="slider" id="slider7">
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Dani Daniels_webp-f9bc9920.jpg" alt="Slide 1" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Taylor Vixen_webp-f0695670.jpg" alt="Slide 2" class="w-full">
+                            </div>
+                            <div class="slide bg-gray-400 rounded-lg overflow-hidden shadow-lg">
+                                <img src=".\s2_Sunny Leone_webp-30c54d20.jpg" alt="Slide 3" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container text-center mt-4">
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="prevSlide('slider7')">Previous</button>
+                        <button class="button bg-red-600 hover:bg-red-950 text-white px-4 py-2 rounded-lg mx-2"
+                            onclick="nextSlide('slider7')">Next</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--           ***  end   ***                                         -->
+
+
+
+
+
+</body>
+
+</html>
